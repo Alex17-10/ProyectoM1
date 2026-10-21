@@ -1,21 +1,27 @@
-# Proyecto de análisis de clientes y restaurantes en Estados Unidos
+> 🌐 **Note:** The Spanish version of this README is available as a PDF. Some content (charts, diagrams, screenshots) is easier to follow in the PDF version.
+>
+> 🌐 **Nota:** La versión en español de este README está disponible en formato PDF. Algunos contenidos (gráficas, diagramas, capturas) se ven más claros en la versión PDF.
 
-## Descripción
+---
 
-Este proyecto tiene como objetivo realizar un proceso completo de limpieza, exploración y análisis de una base de datos de clientes de restaurantes en Estados Unidos. El dataset original contenía 30.000 filas y 17columnas, con un alto porcentaje de datos nulos y negativos en varias columnas. Se realizaron diversas etapas de limpieza de datos, análisis estadístico y aplicación de técnicas de machine learning , se desarrollaron visualizaciones y un documento con las recomendaciones principales.
+# Customer and Restaurant Analysis in the United States
 
-El proyecto fue desarrollado utilizando Python y librerías especializadas para análisis de datos y visualización.
+## Description
 
-## Objetivos
+This project covers a complete process of cleaning, exploring and analyzing a database of restaurant customers in the United States. The original dataset contained 30,000 rows and 17 columns, with a high percentage of null and negative values in several columns. The work included multiple data-cleaning stages, statistical analysis and the application of machine learning techniques. Visualizations were developed, along with a document containing the main recommendations.
 
-- Limpiar y preparar los datos para su análisis.
-- Identificar patrones de consumo de los clientes.
-- Analizar el comportamiento de gasto en restaurantes.
-- Estudiar diferencias entre ciudades y segmentos de clientes.
-- Integrar información externa proveniente de Yelp.
-- Generar recomendaciones de negocio basadas en evidencia.
+The project was developed in Python, using libraries specialized in data analysis and visualization.
 
-## Herramientas utilizadas
+## Objectives
+
+- Clean and prepare the data for analysis.
+- Identify customer consumption patterns.
+- Analyze spending behavior in restaurants.
+- Study differences between cities and customer segments.
+- Integrate external information from Yelp.
+- Generate evidence-based business recommendations.
+
+## Tools Used
 
 - Python
 - Pandas
@@ -25,147 +31,139 @@ El proyecto fue desarrollado utilizando Python y librerías especializadas para 
 - Jupyter Notebook
 - Seaborn
 
-## Proceso de limpieza de datos
+## Data Cleaning Process
 
-Se realizaron las siguientes actividades:
+The following activities were carried out:
 
-- Corrección de edades negativas o superiores a 120 años.
-- Reemplazo de valores faltantes utilizando medianas.
-- Eliminación de espacios en blanco en variables de texto.
-- Corrección de valores negativos en frecuencia de visita.
-- Normalización de números telefónicos.
-- Tratamiento de registros sin correo electrónico.
-- Validación de tipos de datos.
+- Correction of negative ages or ages above 120 years.
+- Replacement of missing values using medians.
+- Removal of whitespace in text variables.
+- Correction of negative values in visit frequency.
+- Normalization of phone numbers.
+- Handling of records without an email address.
+- Data type validation.
 
-## Análisis realizados
+## Analyses Performed
 
-- Cantidad de personas por ciudad.
-- Distribución de clientes por estrato socioeconómico.
-- Gasto promedio en restaurantes por ciudad.
-- Relación entre frecuencia de visita y gasto promedio.
-- Relación entre ingresos mensuales y gasto promedio.
-- Preferencias alimenticias de los clientes.
-- Perfil de los clientes de mayor gasto.
-- Análisis de membresías premium.
-- Relación entre consumo de alcohol y edad.
-- Integración de información proveniente de Yelp.
+- Number of people per city.
+- Distribution of customers by socioeconomic level.
+- Average restaurant spending per city.
+- Relationship between visit frequency and average spending.
+- Relationship between monthly income and average spending.
+- Customer food preferences.
+- Profile of the highest-spending customers.
+- Premium membership analysis.
+- Relationship between alcohol consumption and age.
+- Integration of information from Yelp.
 
-## Archivos utilizados
+## Files Used
 
-### base_datos_restaurantes_USA_v2.csv
+### `base_datos_restaurantes_USA_v2.csv`
 
-Archivo principal del proyecto que contiene la información de los clientes de restaurantes en Estados Unidos. Incluye variables demográficas, económicas y de comportamiento de consumo, tales como:
+Main project file containing information about restaurant customers in the United States. It includes demographic, economic and consumption-behavior variables, such as:
 
-- Nombre y apellido.
-- Edad y género.
-- Ciudad de residencia.
-- Estrato socioeconómico.
-- Ingresos mensuales.
-- Frecuencia de visita a restaurantes.
-- Gasto promedio en comida.
-- Preferencias alimenticias.
-- Consumo de alcohol.
-- Tipo de pago más utilizado.
-- Estado de membresía premium.
-- Información de contacto.
+- First and last name.
+- Age and gender.
+- City of residence.
+- Socioeconomic level.
+- Monthly income.
+- Restaurant visit frequency.
+- Average food spending.
+- Food preferences.
+- Alcohol consumption.
+- Most-used payment method.
+- Premium membership status.
+- Contact information.
 
-Este archivo fue sometido a un proceso de limpieza, validación y transformación para garantizar la calidad de los análisis realizados.
+This file went through a cleaning, validation and transformation process to guarantee the quality of the analyses performed.
 
-### yelp_restaurants.csv
+### `yelp_restaurants.csv`
 
-Archivo generado a partir de consultas realizadas a la API de Yelp. Contiene información real de restaurantes ubicados en diferentes ciudades de Estados Unidos, utilizada para complementar el análisis interno de clientes.
+File generated from queries to the Yelp API. It contains real information about restaurants located in different cities across the United States, used to complement the internal customer analysis.
 
-Las principales variables incluidas son:
+Main variables included:
 
-- ID del restaurante.
-- Nombre del restaurante.
-- Categoría gastronómica principal.
-- Calificación promedio.
-- Número de reseñas.
-- Ciudad.
-- Nivel de precios.
+- Restaurant ID.
+- Restaurant name.
+- Main food category.
+- Average rating.
+- Number of reviews.
+- City.
+- Price level.
 
-Este conjunto de datos permitió realizar análisis comparativos del mercado, identificar categorías populares y detectar oportunidades de alianzas con restaurantes altamente valorados.
+This dataset made it possible to run comparative market analyses, identify popular categories and detect partnership opportunities with highly rated restaurants.
 
-## Integración con Yelp
+## Yelp Integration
 
-Se consultó la API de Yelp para obtener información real de restaurantes.
+The Yelp API was queried to obtain real restaurant information.
 
-Los datos extraídos incluyen:
+The extracted data includes:
 
-- Nombre del restaurante
-- Categoría principal
-- Precio
-- Calificación
-- Número de reseñas
-- Ciudad
+- Restaurant name
+- Main category
+- Price
+- Rating
+- Number of reviews
+- City
 
-Esta información permite complementar el análisis interno de clientes con información del mercado real.
+This information complements the internal customer analysis with real market data.
 
-## Principales hallazgos
+## Main Findings
 
-- Existen diferencias significativas en el gasto promedio entre ciudades.
-- Las preferencias alimenticias varían según la ubicación geográfica.
-- Los clientes con mayores ingresos tienden a presentar mayores niveles de gasto.
-- Las membresías premium muestran comportamientos diferentes según la ciudad.
-- La información de Yelp permite identificar oportunidades de alianzas estratégicas.
+- There are significant differences in average spending between cities.
+- Food preferences vary by geographic location.
+- Customers with higher incomes tend to show higher spending levels.
+- Premium memberships show different behaviors depending on the city.
+- Yelp data helps identify strategic partnership opportunities.
 
-## Propuestas de segmentación
+## Segmentation Proposals
 
-### Segmento 1: Clientes de alto gasto
+### Segment 1: High-spending customers
 
-Características:
+**Characteristics:**
+- High average spending
+- Frequent visits
+- High income
 
-- Alto gasto promedio
-- Visitas frecuentes
-- Ingresos elevados
+**Strategy:**
+- Exclusive programs
+- Premium benefits
+- Loyalty rewards
 
-Estrategia:
+### Segment 2: Frequent customers
 
-- Programas exclusivos
-- Beneficios premium
-- Recompensas por fidelidad
+**Characteristics:**
+- High visit frequency
+- Medium or high spending
 
-### Segmento 2: Clientes frecuentes
+**Strategy:**
+- Recurring discounts
+- Points accumulation
 
-Características:
+### Segment 3: Customers by food preference
 
-- Alta frecuencia de visita
-- Gasto medio o alto
+**Characteristics:**
+- Vegetarians
+- Vegans
+- Meat eaters
+- Seafood eaters
 
-Estrategia:
+**Strategy:**
+- Personalized promotions
+- Partnerships with specialized restaurants
 
-- Descuentos recurrentes
-- Acumulación de puntos
+### Segment 4: Premium customers
 
-### Segmento 3: Clientes según preferencias alimenticias
+**Characteristics:**
+- Active membership
 
-Características:
+**Strategy:**
+- Exclusive benefits
+- Special events
+- Differentiated promotions
 
-- Vegetarianos
-- Veganos
-- Consumidores de carnes
-- Consumidores de mariscos
+## Conclusion
 
-Estrategia:
+This project made it possible to develop an end-to-end data analysis process, from data cleaning and preparation to the generation of visualizations and business findings. By studying more than 30,000 customer records, it was possible to identify consumption patterns, differences between cities, behaviors associated with spending, and customer segmentation opportunities.
 
-- Promociones personalizadas
-- Alianzas con restaurantes especializados
-
-### Segmento 4: Clientes premium
-
-Características:
-
-- Membresía activa
-
-Estrategia:
-
-- Beneficios exclusivos
-- Eventos especiales
-- Promociones diferenciadas
-
-## Conclusión
-
-Este proyecto permitió desarrollar un proceso integral de análisis de datos, abarcando desde la limpieza y preparación de la información hasta la generación de visualizaciones y hallazgos de negocio. A partir del estudio de más de 30.000 registros de clientes, fue posible identificar patrones de consumo, diferencias entre ciudades, comportamientos asociados al gasto y oportunidades de segmentación de clientes.
-
-La integración de datos externos provenientes de Yelp enriqueció el análisis al proporcionar información real del mercado gastronómico, permitiendo contrastar el comportamiento de los clientes con las características de los restaurantes disponibles en cada ciudad.
+Integrating external Yelp data enriched the analysis by providing real information about the food-service market, making it possible to contrast customer behavior with the characteristics of the restaurants available in each city.
